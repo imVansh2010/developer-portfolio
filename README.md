@@ -12,7 +12,7 @@ A sleek, one-page personal website showcasing my background, codebases, leadersh
 
 ## About the Project
 
-This repository contains the source code for my personal portfolio website. It's a modern, responsive single-page app built to present my work and experience in a clean, developer-friendly format. All content and design are managed directly in the codebase.
+This repository contains the source code for my personal portfolio website. It's a modern, responsive single-page app built to present my work and experience in a neat format. All content and design are managed directly in the codebase.
 
 ---
 
