@@ -6,7 +6,7 @@ A sleek, one-page personal website showcasing my background, codebases, leadersh
 
 ## Live Demo
 
-🔗 [https://yourname.is-a.dev](https://yourname.is-a.dev)
+🔗 [https://vanshagarwal.is-a.dev](https://vanshagarwal.is-a.dev)
 
 ---
 
