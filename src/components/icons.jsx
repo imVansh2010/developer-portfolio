@@ -5,6 +5,7 @@ export {
   Menu as MenuIcon,
   X as XIcon,
   Mail as MailIcon,
+  Lock as LockIcon,
   ArrowRight as ArrowRightIcon,
   ExternalLink as ExternalLinkIcon,
   GitBranch as GitBranchIcon,

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MotionConfig } from "framer-motion";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
@@ -9,8 +10,17 @@ import Interests from "./components/Interests.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import PasscodeGate from "./components/PasscodeGate.jsx";
+
+/* TEMPORARY gate: the portfolio stays behind a passcode until the site is done.
+   Set GATE_ENABLED to false (or delete this block + PasscodeGate.jsx) to launch. */
+const GATE_ENABLED = true;
 
 export default function App() {
+  const [unlocked, setUnlocked] = useState(!GATE_ENABLED);
+
+  if (!unlocked) return <PasscodeGate onUnlock={() => setUnlocked(true)} />;
+
   return (
     <MotionConfig reducedMotion="user">
       {/* Sticky top navbar sits above the flow; each section handles its own padding */}
