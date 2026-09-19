@@ -53,7 +53,7 @@ export default function PasscodeGate({ onUnlock }) {
           </div>
 
           <div className="p-8 xl:p-10">
-            <p className="font-mono text-[15px] text-com xl:text-base">
+            <p className="font-mono text-[15px] text-fg xl:text-base">
               <span className="mr-1.5 text-accent">$</span>./open-portfolio --preview
             </p>
 
