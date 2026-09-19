@@ -1,6 +1,6 @@
 # My Portfolio
 
-A sleek, one-page personal website showcasing my background, codebases, leadership, and achievements.
+A neat, one-page personal website showcasing my background, codebases, leadership, and achievements.
 
 ---
 
