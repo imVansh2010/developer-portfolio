@@ -4,6 +4,8 @@
    Design tokens — OLED Dark palette from design-system/MASTER.md
    ============================================================ */
 @theme {
+  /* Careful: naming a color token `base` means Tailwind's base text utility resolves
+     to this color (#030712) instead of the 1rem font size. Use `text-[16px]` for 1rem. */
   --color-base: #030712; /* page background */
   --color-card: #0d1526; /* card background */
   --color-panel: #16203a; /* muted surface (chips, headers) */
@@ -21,6 +23,12 @@
 
   --font-sans: "Fira Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
   --font-mono: "Fira Code", ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+/* Declare the dark scheme explicitly so browsers don't apply their own
+   "auto dark mode" recoloring to a page that is already dark. */
+:root {
+  color-scheme: dark;
 }
 
 html {
