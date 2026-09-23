@@ -24,7 +24,7 @@ function Brand() {
         alt="Vansh Agarwal"
         className="h-12 w-12 shrink-0 rounded-full object-cover"
       />
-      <p className="font-mono text-lg font-bold leading-tight tracking-tight text-fg 2xl:text-2xl">vansh_agarwal</p>
+      <p className="font-mono text-lg font-bold leading-tight tracking-tight text-fg 2xl:text-2xl">Vansh Agarwal</p>
     </a>
   );
 }

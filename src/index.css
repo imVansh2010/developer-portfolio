@@ -29,6 +29,26 @@
    "auto dark mode" recoloring to a page that is already dark. */
 :root {
   color-scheme: dark;
+  /* Height of the sticky navbar, so sections can subtract it from the
+     viewport and land on exactly one page. Keep in sync with Navbar.jsx:
+     py-4 + 48px brand + 1px border = 81px, and py-5 from the lg breakpoint
+     onwards = 89px. */
+  --nav-h: 81px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --nav-h: 89px;
+  }
+}
+
+/* Section fills exactly the space left under the sticky navbar, so one
+   navbar + one section = exactly one screen — no more, no less.
+   scroll-margin matches the navbar so anchor jumps land flush under it
+   instead of leaving a sliver of the previous section on screen. */
+.section-screen {
+  min-height: calc(100svh - var(--nav-h));
+  scroll-margin-top: var(--nav-h);
 }
 
 html {
@@ -52,7 +72,8 @@ body {
   border-radius: 4px;
 }
 
-/* Hero / contact ambient gradients — subtle, uniform glow over base */
+/* Contact ambient gradient — subtle, uniform glow over base.
+   (The hero no longer uses this: it must match the flat bg-base sections.) */
 .hero-bg {
   background:
     radial-gradient(ellipse 70% 50% at 70% 0%, rgba(34, 197, 94, 0.05), transparent 70%),

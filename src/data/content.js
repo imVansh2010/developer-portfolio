@@ -7,42 +7,25 @@ export const profile = {
   name: "Vansh Agarwal",
   firstName: "Vansh",
   subheadline:
-    "High school sophomore passionate about building high-impact software, exploring computer science, and making an impact on AI.",
+    "High school sophomore passionate about computer science, building software, and working with AI.",
   email: "agrwlvansh@gmail.com",
   github: "https://github.com/imVansh2010",
   linkedin: "https://www.linkedin.com/in/vansh-agarwal-8baa38431",
 };
 
-export const about = {
-  /* The About Me paragraph is rendered (with keyword highlights) in
-     src/components/AboutMe.jsx — edit it there. */
-  stats: [
-    { value: "3", label: "Club leadership & team roles" },
-    { value: "4", label: "AP STEM courses in progress" },
-    { value: "Python", label: "Primary competition language" },
-  ],
-};
+/* The About Me paragraph is rendered (with keyword highlights) in
+   src/components/AboutMe.jsx — edit it there. */
 
 export const codebases = [
   {
-    title: "TSA Video Game Design Entry",
-    file: "tsa-game.cpp",
+    title: "VuePoint - StudentVue Grade Calculator",
+    /* `file` is rendered as the editor-style tag in the card header. */
+    file: "vuepoint.vercel.app",
     dot: "#4EC9B0",
-    desc: "Competitive game development entry for TSA — building core game logic and system design alongside my team, with clean, testable architecture.",
-    tags: ["Game Logic", "System Design", "Git"],
+    desc: "A bookmarklet that turns StudentVUE class gradebooks into a fully local, hypothetical grade calculator directly in your browser.",
+    tags: ["Javascript", "DOM Parsing"],
     linkLabel: "GitHub Repo",
-    // TODO: replace with the real TSA GitHub repo URL
-    href: "https://github.com/",
-  },
-  {
-    title: "Algorithmic Problem Solving (USACO)",
-    file: "usaco-solutions.cpp",
-    dot: "#569CD6",
-    desc: "Active collection of USACO problem sets and solutions in C++ and Python, with notes on data structures and reusable algorithmic patterns.",
-    tags: ["C++", "Python", "Data Structures", "Algorithms"],
-    linkLabel: "GitHub Profile",
-    // TODO: replace with the real GitHub profile/repo URL
-    href: "https://github.com/",
+    href: "https://github.com/imVansh2010/vuepoint",
   },
 ];
 
@@ -52,23 +35,21 @@ export const leadership = [
     org: "TSA Video Game Design",
     period: "2026 – Present",
     bullets: [
-      "Collaborating with teammates on game logic and software builds for competition.",
+      "Collaborating with teammates on game logic to produce captivating games.",
     ],
   },
   {
     role: "Vice President",
     org: "USACO Club",
     period: "2026 – Present",
-    bullets: [
-      "Curating algorithmic practice sets and preparing members for USACO contest windows.",
-    ],
+    bullets: ["Building a community of students who want to compete in USACO contests."],
   },
   {
     role: "Vice President",
-    org: "Online Tutoring Club",
+    org: "National Tutoring Honor Society",
     period: "2026 – Present",
     bullets: [
-      "Teaching students and helping them build confidence through one-on-one online sessions.",
+      "Finding students to help tutor underprivileged kids in a variety of subjects completely online.",
     ],
   },
 ];
@@ -90,7 +71,7 @@ export const interests = [
   {
     icon: "cube",
     title: "Cubing",
-    desc: "I enjoy cubing in my free time — I currently average just under 20 seconds on the 3x3.",
+    desc: "I enjoy cubing in my free time — I can solve the 3x3 in under 12 seconds.",
   },
   {
     icon: "basketball",

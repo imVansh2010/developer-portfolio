@@ -3,11 +3,11 @@ import { FadeIn, SectionHeading } from "./ui.jsx";
 
 export default function Leadership() {
   return (
-    <section id="leadership" className="scroll-mt-24 flex min-h-svh flex-col justify-center border-t border-line/50 bg-base">
+    <section id="leadership" className="section-screen flex flex-col justify-center border-t border-line/50 bg-base">
       <div className="mx-auto max-w-[88rem] px-8 py-16 sm:py-24 xl:py-28">
         <SectionHeading num="03" title="Leadership &amp; Impact" sub="Clubs and teams where I lead, teach, and build." />
 
-        <ol className="mt-12 flex max-w-3xl flex-col gap-10 border-l-2 border-line-dim pl-8 xl:mt-16 xl:gap-12 xl:pl-10">
+        <ol className="mt-12 flex max-w-4xl flex-col gap-10 border-l-2 border-line-dim pl-8 xl:mt-14 xl:gap-10 xl:pl-10">
           {leadership.map((entry, i) => (
             <FadeIn key={entry.org} delay={i * 0.08}>
               <li className="relative">

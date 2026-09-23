@@ -49,7 +49,7 @@ function SocialBadge({ href, label, children }) {
 
 export default function Hero() {
   return (
-    <section id="home" className="hero-bg flex min-h-svh flex-col justify-center">
+    <section id="home" className="section-screen flex flex-col justify-center bg-base">
       <div className="mx-auto grid max-w-[88rem] items-center gap-16 px-8 py-16 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] xl:gap-20 2xl:gap-24">
         {/* ---- Left: copy + CTAs ---- */}
         <motion.div variants={container} initial="hidden" animate="show">

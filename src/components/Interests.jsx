@@ -11,9 +11,9 @@ const ICONS = {
 
 export default function Interests() {
   return (
-    <section id="interests" className="scroll-mt-24 flex min-h-svh flex-col justify-center border-t border-line/50 bg-base">
+    <section id="interests" className="section-screen flex flex-col justify-center border-t border-line/50 bg-base">
       <div className="mx-auto max-w-[88rem] px-8 py-16 sm:py-24 xl:py-28">
-        <SectionHeading num="05" title="Interests" sub="What I'm into beyond the editor." />
+        <SectionHeading num="05" title="Interests" sub="Other hobbies I enjoy beyond programming." />
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 xl:mt-16 xl:gap-10">
           {interests.map((item, i) => {

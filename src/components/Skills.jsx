@@ -13,7 +13,7 @@ function SkillBadge({ children }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="scroll-mt-24 flex min-h-svh flex-col justify-center border-t border-line/50 bg-base">
+    <section id="skills" className="section-screen flex flex-col justify-center border-t border-line/50 bg-base">
       <div className="mx-auto max-w-[88rem] px-8 py-16 sm:py-24 xl:py-28">
         <SectionHeading num="06" title="Skills" sub="Languages, tools, coursework, and competition focus." />
 

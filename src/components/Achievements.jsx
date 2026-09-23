@@ -4,7 +4,7 @@ import { TrophyIcon } from "./icons.jsx";
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="scroll-mt-24 flex min-h-svh flex-col justify-center border-t border-line/50 bg-base">
+    <section id="achievements" className="section-screen flex flex-col justify-center border-t border-line/50 bg-base">
       <div className="mx-auto max-w-[88rem] px-8 py-16 sm:py-24 xl:py-28">
         <SectionHeading num="04" title="Achievements" sub="Recognition from competitions and programs." />
 

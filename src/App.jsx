@@ -13,8 +13,9 @@ import Footer from "./components/Footer.jsx";
 import PasscodeGate from "./components/PasscodeGate.jsx";
 
 /* TEMPORARY gate: the portfolio stays behind a passcode until the site is done.
-   Set GATE_ENABLED to false (or delete this block + PasscodeGate.jsx) to launch. */
-const GATE_ENABLED = true;
+   Set GATE_ENABLED to false (or delete this block + PasscodeGate.jsx) to launch.
+   Currently DISABLED — the gate is kept in the codebase, just not shown. */
+const GATE_ENABLED = false;
 
 export default function App() {
   const [unlocked, setUnlocked] = useState(!GATE_ENABLED);
