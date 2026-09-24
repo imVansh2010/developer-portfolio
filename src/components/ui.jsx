@@ -37,9 +37,7 @@ export function Chip({ children, accent = false, className = "", size = "text-[1
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-center font-mono ${size} ${className} ${
-        accent
-          ? "border-accent/40 bg-accent/10 text-accent"
-          : "border-line-dim bg-panel text-fg-muted"
+        accent ? "border-accent/40 bg-accent/10 text-accent" : "border-line-dim bg-panel text-fg-muted"
       }`}
     >
       {children}
@@ -53,9 +51,7 @@ export function Chip({ children, accent = false, className = "", size = "text-[1
 export function FileTag({ dot, children }) {
   return (
     <span className="inline-flex max-w-full min-w-0 items-center gap-1.5 whitespace-nowrap rounded-md border border-line-dim bg-panel px-3.5 py-1.5 font-mono text-sm text-fg xl:px-4 xl:py-2">
-      {dot ? (
-        <span className="h-2 w-2 shrink-0 rounded-sm" style={{ background: dot }} />
-      ) : null}
+      {dot ? <span className="h-2 w-2 shrink-0 rounded-sm" style={{ background: dot }} /> : null}
       <span className="truncate">{children}</span>
     </span>
   );

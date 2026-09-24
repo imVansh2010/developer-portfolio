@@ -19,11 +19,7 @@ const LINKS = [
 function Brand() {
   return (
     <a href="#home" className="flex items-center gap-3">
-      <img
-        src="/logo.png"
-        alt="Vansh Agarwal"
-        className="h-12 w-12 shrink-0 rounded-full object-cover"
-      />
+      <img src="/logo.png" alt="Vansh Agarwal" className="h-12 w-12 shrink-0 rounded-full object-cover" />
       <p className="font-mono text-lg font-bold leading-tight tracking-tight text-fg 2xl:text-2xl">Vansh Agarwal</p>
     </a>
   );
@@ -87,7 +83,7 @@ export default function Navbar() {
       () => {
         suppressSpy.current = false;
       },
-      { once: true }
+      { once: true },
     );
   }
 
@@ -113,10 +109,7 @@ export default function Navbar() {
         <Brand />
 
         {/* Desktop: centered nav links (shown at xl+ so they never collide with the brand name) */}
-        <nav
-          aria-label="Primary"
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 xl:flex"
-        >
+        <nav aria-label="Primary" className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 xl:flex">
           {LINKS.map((l) => (
             <a
               key={l.id}

@@ -6,16 +6,10 @@ export default function Contact() {
   return (
     <section id="contact" className="hero-bg section-screen flex flex-col justify-center border-t border-line/50">
       <div className="mx-auto flex max-w-[88rem] flex-col items-center px-8 py-16 text-center sm:py-24 xl:py-28">
-        <SectionHeading num="07" title="Contact" className="[&_p]:mt-0" />
+        <SectionHeading num="07" title="Contact" />
 
-        {/* Secondary line — kept a step smaller than the "// 07. Contact"
-            heading so the two don't compete, and width-capped so the copy
-            sits as a balanced two-line block instead of one long line. */}
-        <FadeIn className="max-w-3xl">
-          <h3 className="mt-5 text-3xl font-bold tracking-tight sm:text-4xl xl:text-5xl">
-            Let's Connect
-          </h3>
-          <p className="mt-3 text-lg leading-relaxed text-fg-muted sm:text-xl xl:mt-4 xl:text-2xl">
+        <FadeIn className="mt-6 xl:mt-8">
+          <p className="text-lg leading-relaxed text-fg-muted sm:text-xl xl:text-2xl">
             Open to research opportunities, software projects, and STEM collaborations.
           </p>
         </FadeIn>

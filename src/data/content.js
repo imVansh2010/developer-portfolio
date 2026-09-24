@@ -6,8 +6,7 @@
 export const profile = {
   name: "Vansh Agarwal",
   firstName: "Vansh",
-  subheadline:
-    "High school sophomore passionate about computer science, building software, and working with AI.",
+  subheadline: "High school sophomore passionate about computer science, building software, and working with AI.",
   email: "agrwlvansh@gmail.com",
   github: "https://github.com/imVansh2010",
   linkedin: "https://www.linkedin.com/in/vansh-agarwal-8baa38431",
@@ -34,9 +33,7 @@ export const leadership = [
     role: "Team Member",
     org: "TSA Video Game Design",
     period: "2026 – Present",
-    bullets: [
-      "Collaborating with teammates on game logic to produce captivating games.",
-    ],
+    bullets: ["Collaborating with teammates on game logic to produce captivating games."],
   },
   {
     role: "Vice President",
@@ -48,9 +45,7 @@ export const leadership = [
     role: "Vice President",
     org: "National Tutoring Honor Society",
     period: "2026 – Present",
-    bullets: [
-      "Finding students to help tutor underprivileged kids in a variety of subjects completely online.",
-    ],
+    bullets: ["Finding students to help tutor underprivileged kids in a variety of subjects completely online."],
   },
 ];
 
@@ -96,12 +91,7 @@ export const skills = [
   },
   {
     title: "Coursework & Rigor",
-    items: [
-      "AP Computer Science Principles",
-      "AP Computer Science A",
-      "AP Physics 1",
-      "AP Physics 2",
-    ],
+    items: ["AP Computer Science Principles", "AP Computer Science A", "AP Physics 1", "AP Physics 2"],
   },
   {
     title: "Competitions & Focus",

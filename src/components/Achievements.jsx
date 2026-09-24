@@ -24,7 +24,9 @@ export default function Achievements() {
                   <div>
                     <p className="font-mono text-sm uppercase tracking-wider text-fg-muted">{a.org}</p>
                     <h3 className="mt-1.5 text-3xl font-bold tracking-tight sm:text-4xl xl:text-5xl">{a.title}</h3>
-                    <p className="mt-3 max-w-[65ch] text-lg leading-relaxed text-fg-muted sm:text-xl xl:mt-4 xl:text-2xl">{a.desc}</p>
+                    <p className="mt-3 max-w-[65ch] text-lg leading-relaxed text-fg-muted sm:text-xl xl:mt-4 xl:text-2xl">
+                      {a.desc}
+                    </p>
                   </div>
                 </div>
               </article>

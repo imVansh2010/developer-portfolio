@@ -57,10 +57,13 @@ export default function Hero() {
             variants={item}
             className="mb-7 text-6xl font-extrabold leading-[1.05] tracking-tight sm:text-7xl lg:text-8xl xl:text-9xl"
           >
-            Hey, I'm <span className="text-accent">Vansh</span>
+            Hey, I'm <span className="text-accent">{profile.firstName}</span>
           </motion.h1>
 
-          <motion.p variants={item} className="mb-8 max-w-[56ch] text-xl leading-relaxed text-fg-muted sm:text-2xl xl:text-3xl">
+          <motion.p
+            variants={item}
+            className="mb-8 max-w-[56ch] text-xl leading-relaxed text-fg-muted sm:text-2xl xl:text-3xl"
+          >
             {profile.subheadline}
           </motion.p>
 

@@ -19,14 +19,17 @@ This repository contains the source code for my personal portfolio website. It's
 ## Tech Stack
 
 **Frontend**
+
 - React
 - Tailwind CSS
 
 **Tooling & Infrastructure**
+
 - Node.js
 - Vite
 
 **Deployment & Version Control**
+
 - Vercel
 - Git / GitHub
 

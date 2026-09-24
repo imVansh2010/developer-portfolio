@@ -14,12 +14,11 @@ export default function AboutMe() {
             </div>
             <p className="text-2xl leading-relaxed text-fg-muted sm:text-3xl xl:text-4xl xl:leading-[1.6]">
               For me, computer science is all about the{" "}
-              <span className="font-medium text-fg">thrill of breaking down hard problems</span> into
-              clean, efficient logic. As a high school developer, I focus heavily on{" "}
-              <span className="font-medium text-accent">algorithmic problem solving in Python</span> and
-              building responsive web applications using{" "}
-              <span className="font-medium text-prop">React and Node.js</span>. Outside of coding, I
-              enjoy hanging out with my friends and helping others through{" "}
+              <span className="font-medium text-fg">thrill of breaking down hard problems</span> into clean, efficient
+              logic. As a high school developer, I focus heavily on{" "}
+              <span className="font-medium text-accent">algorithmic problem solving in Python</span> and building
+              responsive web applications using <span className="font-medium text-prop">React and Node.js</span>.
+              Outside of coding, I enjoy hanging out with my friends and helping others through{" "}
               <span className="font-medium text-prop">tutoring</span>. Above all, I enjoy{" "}
               <span className="font-medium text-fg">building things that genuinely matter</span>.
             </p>

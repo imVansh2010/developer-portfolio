@@ -25,7 +25,9 @@ export default function Interests() {
                     <Icon size={36} className="xl:h-10 xl:w-10" />
                   </div>
                   <h3 className="mt-6 text-2xl font-semibold xl:mt-8 xl:text-3xl">{item.title}</h3>
-                  <p className="mt-3 text-lg leading-relaxed text-fg-muted sm:text-xl xl:mt-4 xl:text-2xl">{item.desc}</p>
+                  <p className="mt-3 text-lg leading-relaxed text-fg-muted sm:text-xl xl:mt-4 xl:text-2xl">
+                    {item.desc}
+                  </p>
                 </div>
               </FadeIn>
             );

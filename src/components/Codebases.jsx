@@ -16,7 +16,9 @@ export default function Codebases() {
                   <h3 className="text-2xl font-bold sm:text-3xl xl:text-4xl">{repo.title}</h3>
                   <FileTag dot={repo.dot}>{repo.file}</FileTag>
                 </div>
-                <p className="max-w-[80ch] flex-1 text-lg leading-relaxed text-fg-muted sm:text-xl xl:text-2xl">{repo.desc}</p>
+                <p className="max-w-[80ch] flex-1 text-lg leading-relaxed text-fg-muted sm:text-xl xl:text-2xl">
+                  {repo.desc}
+                </p>
                 <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
                   <div className="flex flex-wrap gap-2.5 xl:gap-3">
                     {repo.tags.map((tag) => (
