@@ -20,7 +20,7 @@ function Brand() {
   return (
     <a href="#home" className="flex items-center gap-3">
       <img src="/logo.png" alt="Vansh Agarwal" className="h-12 w-12 shrink-0 rounded-full object-cover" />
-      <p className="font-mono text-lg font-bold leading-tight tracking-tight text-fg 2xl:text-2xl">Vansh Agarwal</p>
+      <p className="font-mono text-lg font-bold leading-tight tracking-tight text-fg 2xl:text-2xl">{profile.name}</p>
     </a>
   );
 }
@@ -78,14 +78,20 @@ export default function Navbar() {
     suppressTimer.current = setTimeout(() => {
       suppressSpy.current = false;
     }, 1000);
-    document.addEventListener(
-      "scrollend",
-      () => {
-        suppressSpy.current = false;
-      },
-      { once: true },
-    );
   }
+
+  /* Re-enable the scroll-spy once a smooth scroll settles, and tear down the
+     listener + fallback timer when the navbar unmounts. */
+  useEffect(() => {
+    const onScrollEnd = () => {
+      suppressSpy.current = false;
+    };
+    document.addEventListener("scrollend", onScrollEnd);
+    return () => {
+      document.removeEventListener("scrollend", onScrollEnd);
+      clearTimeout(suppressTimer.current);
+    };
+  }, []);
 
   /* Keep the browser tab title in sync with the section on screen,
      e.g. "Vansh Agarwal | About". No active section (hero) → just the name. */

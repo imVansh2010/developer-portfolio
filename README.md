@@ -40,8 +40,8 @@ This repository contains the source code for my personal portfolio website. It's
 Clone the repository and run it locally:
 
 ```bash
-git clone https://github.com/yourusername/my-portfolio.git
-cd my-portfolio
+git clone https://github.com/imVansh2010/developer-portfolio.git
+cd developer-portfolio
 npm install
 npm run dev
 ```

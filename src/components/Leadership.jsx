@@ -11,10 +11,10 @@ export default function Leadership() {
           sub="Clubs and teams where I lead, teach, and build."
         />
 
-        <ol className="mt-12 flex max-w-4xl flex-col gap-10 border-l-2 border-line-dim pl-8 xl:mt-14 xl:gap-10 xl:pl-10">
+        <ol className="mt-12 flex max-w-4xl flex-col gap-10 border-l-2 border-line-dim pl-8 xl:mt-14 xl:pl-10">
           {leadership.map((entry, i) => (
-            <FadeIn key={entry.org} delay={i * 0.08}>
-              <li className="relative">
+            <li key={entry.org} className="relative">
+              <FadeIn delay={i * 0.08}>
                 {/* timeline dot — border matches the section background */}
                 <span
                   aria-hidden="true"
@@ -42,8 +42,8 @@ export default function Leadership() {
                     </li>
                   ))}
                 </ul>
-              </li>
-            </FadeIn>
+              </FadeIn>
+            </li>
           ))}
         </ol>
       </div>

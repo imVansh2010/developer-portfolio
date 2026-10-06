@@ -1,3 +1,4 @@
+import { profile } from "../data/content.js";
 import { GitBranchIcon } from "./icons.jsx";
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
         main <span className="text-[#4ADE80]">✓ 0 errors</span>
       </span>
       <span>
-        © {new Date().getFullYear()} Vansh Agarwal · built with <span className="text-prop">react + tailwind</span>
+        © {new Date().getFullYear()} {profile.name} · built with <span className="text-prop">react + tailwind</span>
       </span>
     </footer>
   );
